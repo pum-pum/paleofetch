@@ -10,7 +10,7 @@
     { "Host: ",       get_host,                true  }, \
     { "Kernel: ",     get_kernel,              true  }, \
     { "Uptime: ",     get_uptime,              false }, \
-    { "Battery: ",    get_battery_percentage,  false }, \
+   /*{ "Battery: ",    get_battery_percentage,  false },*/ \
     SPACER \
     { "Packages: ",   get_packages_pacman,   false }, \
     { "Shell: ",      get_shell,             false }, \

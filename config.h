@@ -1,6 +1,7 @@
-#include "logos/arch.h"
+#include "logos/fox.h"
+/* why a fox?, I don't know, just like it. Is gnu-linux no matter the distro, of course you can change this before compiling */
 #define COLOR "\e[1;36m"
-
+/* the default color is blue */
 #define CONFIG \
 { \
    /* name            function                 cached */\

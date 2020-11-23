@@ -24,6 +24,8 @@ the former. On Arch Linux, you should have `libpci` already installed if you hav
 installed. On other linux distrobutions, you may need to install libpci seperatley
 if its not already present.
 
+on debian based systems the dev packages are `libx11-dev` , `libpci-dev`.
+
 Compiling
 ---------
 

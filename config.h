@@ -14,7 +14,7 @@
    /*{ "Battery: ",    get_battery_percentage,  false },*/ \
     SPACER \
    /* { "Packages: ",   get_packages_pacman,   false },*/ \
-    { "Packages: "},  get_packages_debian    false }, \
+    { "Packages: "},  debian_pkgs,            false }, \
     { "Shell: ",      get_shell,             false }, \
     { "Resolution: ", get_resolution,        false }, \
     { "Terminal: ",   get_terminal,          false }, \

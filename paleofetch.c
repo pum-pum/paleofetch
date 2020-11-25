@@ -292,11 +292,11 @@ static char *get_battery_percentage() {
     return get_packages("/var/lib/pacman/local", "pacman", 0);
 }*/
 
-/* I have to test this*/
+/* I have to test this
 static char *debian_pkgs() {
     system("dpkg --get-selections | grep -v deinstall | wc -l");
     return 0;
-}
+}*/
 static char *get_shell() {
     char *shell = malloc(BUF_SIZE);
     char *shell_path = getenv("SHELL");

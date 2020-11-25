@@ -263,7 +263,7 @@ static char *get_battery_percentage() {
   return battery;
 }
 
-static char *get_packages(const char* dirname, const char* pacname, int num_extraneous) {
+/*static char *get_packages(const char* dirname, const char* pacname, int num_extraneous) {
     int num_packages = 0;
     DIR * dirp;
     struct dirent *entry;
@@ -286,12 +286,17 @@ static char *get_packages(const char* dirname, const char* pacname, int num_extr
     snprintf(packages, BUF_SIZE, "%d (%s)", num_packages, pacname);
 
     return packages;
-}
+}*/
 
-static char *get_packages_pacman() {
+/*static char *get_packages_pacman() {
     return get_packages("/var/lib/pacman/local", "pacman", 0);
-}
+}*/
 
+/* I have to test this*/
+static char *debian_pkgs() {
+    system("dpkg --get-selections | grep -v deinstall | wc -l");
+    return 0;
+}
 static char *get_shell() {
     char *shell = malloc(BUF_SIZE);
     char *shell_path = getenv("SHELL");
